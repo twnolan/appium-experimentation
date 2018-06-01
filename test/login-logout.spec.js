@@ -40,8 +40,8 @@ const pageObjects = {
     "authenticate_button": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.Button"
   },
   "KEYCLOAK_LOGIN_SCREEN": {
-    "username_text_area": '//android.webkit.WebView[@content-desc="Log in to secure-app"]/android.view.View[3]/android.view.View/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.EditText',
-    "password_text_area": '//android.webkit.WebView[@content-desc="Log in to secure-app"]/android.view.View[3]/android.view.View/android.view.View[1]/android.view.View/android.view.View[4]/android.widget.EditText',
+    "username_text_area": '//android.webkit.WebView[@content-desc="Log in to secure-app"]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText',
+    "password_text_area": '//android.webkit.WebView[@content-desc="Log in to secure-app"]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[4]/android.widget.EditText',
     "login_button": "~Log in"
   },
   "LOGGED_IN_SCREEN": {
@@ -100,7 +100,7 @@ describe(scriptName, () => {
       .isVisible(pageObjects.KEYCLOAK_LOGIN_SCREEN.username_text_area).should.eventually.be.true
       .isVisible(pageObjects.KEYCLOAK_LOGIN_SCREEN.password_text_area).should.eventually.be.true
       .setValue(pageObjects.KEYCLOAK_LOGIN_SCREEN.username_text_area, userDetails.username)
-      .setValue(pageObjects.KEYCLOAK_LOGIN_SCREEN.password_text_area, userDetails.password) instead
+      .setValue(pageObjects.KEYCLOAK_LOGIN_SCREEN.password_text_area, userDetails.password)
       .isVisible(pageObjects.KEYCLOAK_LOGIN_SCREEN.login_button).should.eventually.be.true
       .click(pageObjects.KEYCLOAK_LOGIN_SCREEN.login_button)
       .pause(3000)
