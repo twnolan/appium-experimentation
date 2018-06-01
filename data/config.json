@@ -1,6 +1,6 @@
 {
   "ANDROID_DETAILS": {
-    "platformVersion": "8.0",
+    "platformVersion": "8.1",
     "deviceName": "Android Emulator"
   },
   "APPIUM_DETAILS": {
@@ -8,7 +8,7 @@
     "logLevel": "error"
   },
   "USER": {
-    "username": "",
-    "password": ""
+    "username": "user1",
+    "password": "123"
   }
 }
