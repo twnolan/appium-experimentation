@@ -8,7 +8,7 @@
     "logLevel": "error"
   },
   "USER": {
-    "username": "user1",
-    "password": "123"
+    "username": "",
+    "password": ""
   }
 }
