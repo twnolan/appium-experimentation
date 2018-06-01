@@ -15,7 +15,7 @@
   Then run the following comands:
 
   ```
-    npm start-appium server
+    npm start-appium-server
     npm test
   ```
 
